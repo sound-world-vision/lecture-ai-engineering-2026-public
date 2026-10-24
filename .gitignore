@@ -12,3 +12,6 @@ learning_log/
 
 # macOS
 .DS_Store
+
+# 個人のメモを管理対象外とする
+notes
