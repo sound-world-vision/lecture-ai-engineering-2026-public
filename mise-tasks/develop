@@ -5,4 +5,7 @@ set -euxo pipefail
 #USAGE arg "<slug>" help="Branch name slug"
 #USAGE arg "[base]" help="Base branch"
 
-gh issue develop "${usage_issue_no}" -b "${usage_base:-main}" -n "feature/issue-${usage_issue_no}-${usage_slug}"
+gh issue develop "${usage_issue_no}" \
+  -b "${usage_base:-main}" \
+  -n "feature/issue-${usage_issue_no}-${usage_slug}" \
+  --checkout
