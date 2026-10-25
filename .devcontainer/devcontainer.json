@@ -24,5 +24,15 @@
         "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python"
       }
     }
+  },
+  // コンテナ内のポートをホスト（PC）に転送する設定
+  "forwardPorts": [5000],
+
+  // 必要に応じてポートの自動表示名を設定（任意）
+  "portsAttributes": {
+    "5000": {
+      "label": "MLflow UI",
+      "onAutoForward": "notify"
+    }
   }
 }

@@ -15,3 +15,6 @@ learning_log/
 
 # 個人のメモを管理対象外とする
 notes
+
+# mlflow データベースファイル
+mlflow

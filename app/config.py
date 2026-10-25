@@ -5,10 +5,14 @@ APIキーやモデル名はコードに書かず、環境変数から読み込�
 
 import os
 
+from typing import Optional
+
 # 既定モデル。環境変数 AIE_MODEL を設定すると切り替えられる。
 #   例: export AIE_MODEL=gemini-3.5-flash
 DEFAULT_MODEL = "gemini-3.5-flash-lite"
 MODEL = os.getenv("AIE_MODEL", DEFAULT_MODEL)
+TRACKING_SERVER_URL_KEY = "TRACKING_SERVER_URL"
+TEMPERATURE_KEY = "TEMPERATURE"
 
 
 def api_error_message(status: int, detail: str = "") -> str:
@@ -34,3 +38,17 @@ def get_api_key() -> str:
             "   （左下の「Codespaces」→「Stop Current Codespace」→ 再度開く）"
         )
     return key
+
+
+def get_tracking_server_url() -> Optional[str]:
+    """トラッキングサーバーのURLを取得。"""
+    return os.getenv(TRACKING_SERVER_URL_KEY)
+
+
+def get_temperature() -> float:
+    """temperature の取得"""
+    config = os.getenv(TEMPERATURE_KEY)
+    try:
+        return float(config)
+    except:
+        return 1.0

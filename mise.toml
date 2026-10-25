@@ -7,3 +7,12 @@ _.python.venv = {
   create = true,
   uv_create_args = ["--seed"],
 }
+
+[tasks.mlflow]
+description = "Run mlfow"
+run = '''
+#!/usr/bin/env bash
+uvx mlflow server --host 0.0.0.0 --port 5000 \
+--backend-store-uri sqlite:///mlflow/mlflow.db \
+--default-artifact-root mlflow/mlruns
+'''
