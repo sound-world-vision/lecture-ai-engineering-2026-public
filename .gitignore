@@ -18,3 +18,8 @@ notes
 
 # mlflow データベースファイル
 mlflow
+mlruns
+
+# LoRA学習ファイル
+notebooks/work/adapter
+notebooks/work/ckpt

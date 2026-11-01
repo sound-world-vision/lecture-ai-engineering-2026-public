@@ -1,0 +1,534 @@
+{
+  "summary": {
+    "label": "after",
+    "n": 58,
+    "format_rate": 0.9655172413793104,
+    "content_rate": 0.5172413793103449,
+    "both_rate": 0.5172413793103449,
+    "seconds": 88.4
+  },
+  "rows": [
+    {
+      "question": "評価と改善のサイクルについて簡単に説明してください。",
+      "raw": "{\"answer\": \"作る→測る→直すを繰り返す開発の進め方。AIアプリは出力が確率的に揺れるため、感覚ではなく評価データや指標で良し悪しを判断し、その結果をもとにプロンプト・データ・モデル・ツールを改善する。本講座では学習支援AIを題材に、回をまたいでこのサイクルを回す。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "LLM（大規模言語モデル）について簡単に説明してください。",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "トークンについて簡単に説明してください。",
+      "raw": "{\"answer\": \"LLMが1つの質問を扱う入力と出力の合計トークン数。会話履歴やツールの結果もこの中に収める必要があるため、何をモデルに渡すかの設計が重要になる。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "プロンプトについて簡単に説明してください。",
+      "raw": "{\"answer\": \"LLMに渡す入力文。指示＋ contexto を２部分的に構成する。指示を2つに分割して渡す。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "システムプロンプトについて簡単に説明してください。",
+      "raw": "{\"answer\": \"利用者の入力を、エージェントが望ましくない行動を避けるために使うテキスト。MCPの server/prompt などで設定し、クライアントからツールを呼び出して出力する。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "temperatureについて簡単に説明してください。",
+      "raw": "{\"answer\": \"次のトークンを選ぶときのランダムさを調整する設定値。低いほど出力が安定し、高いほど多様になる。同じ質問でも回答が変わる理由の一つ。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "APIについて簡単に説明してください。",
+      "raw": "{\"answer\": \"プログラムから別のサービスのAPIを呼び出すための窓口。本講座では mcpServers にPythonのコードを書いておくと、クライアントが選んだモデルとサーバーを自動で選び、コード補完で実行する。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "APIキーについて簡単に説明してください。",
+      "raw": "{\"answer\": \"APIを呼び出す人を識別するための秘密の文字列。漏れると他人に利用枠を使われるため、コードに直接書かない、コミットしない、チャットに貼らない。本講座ではCodespaces secretに登録し、環境変数 GEMINI_API_KEY として読み込む。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "環境変数について簡単に説明してください。",
+      "raw": "{\"answer\": \"アプリと環境で同じ動きをさせるための設定ファイル。APIキーや設定をコードから切り離すために使う。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "GitHub Codespacesについて簡単に説明してください。",
+      "raw": "{\"answer\": \"GitHubが提供するクラウド上の開発環境。ブラウザからVS Codeを開き、repoに書かれた設定どおりの環境をすぐに使える。個人アカウントには毎月の無料枠があり、使わないときは停止しないと枠を消費し続ける。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "devcontainerについて簡単に説明してください。",
+      "raw": "{\"answer\": \"開発環境をコンテナとして定義する仕組み。.devcontainer/devcontainer.json にPythonのバージョンや拡張機能、起動時のコマンドを書いておくと、誰がCodespacesを開いても同じ環境になる。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "Codespaces secretについて簡単に説明してください。",
+      "raw": "{\"answer\": \"GitHubのアカウント設定に登録しておく秘密の値。アプリが起動するときにその値を環境変数として渡す。登録時に使うrepo（自分のfork）を選ぶ必要がある。起動中に登録した場合はCodespacesの再起動が必要。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ブランチについて簡単に説明してください。",
+      "raw": "{\"answer\": \"作業の流れを分けるための仕組み。main を壊さずに変更を試し、まとまったらPRで main に取り込む。本講座では回ごとに lecNN-App の起動 as mercurial main で作業ブランチを作る。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "プルリクエスト（PR）について簡単に説明してください。",
+      "raw": "{\"answer\": \"あるブランチの変更を別のブランチへ取り込むよう依頼する仕組み。差分の確認、コメント、自動テストの結果表示ができる。本講座の提出は、自分のfork内で作業ブランチから main へのPRとして行う。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "GitHub Copilotについて簡単に説明してください。",
+      "raw": "{\"answer\": \"GitHubのコーディング支援。エディタでのコード補完、チャットでの質問、エージェントモードでの複数ファイル編集などができる。無料のCopilot Freeは補完の回数とチャットの利用量に上限がある。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "コーディングエージェントについて簡単に説明してください。",
+      "raw": "{\"answer\": \"ファイルの読み書きやコマンド実行をプログラムで制御し、指示された行動に焦点を当てたコーディングを行うプログラム。Claude Code、Copilotのエージェントモード、Piなどがある。中身はLLM＋ループ＋ツールというAIエージェントの構造そのもの。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "事前学習について簡単に説明してください。",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ファインチューニングについて簡単に説明してください。",
+      "raw": "{\"answer\": \"事前学習したLLMを、特定のタスクや形式に合ったデータで追加学習させること。出力の形式や口調、特定ドメインの振る舞いを身につけさせるのに向く。最新の事実を覚えさせる用途には、ツールで参照させるAPIリクエストで学習するほうが向くことが多い。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "PEFTについて簡単に説明してください。",
+      "raw": "{\"answer\": \"モデルの全パラメータではなく、ごく一部や追加した小さなパラメータだけを学習する手法の総称。必要なGPUメモリと保存容量を大きく減らせる。LoRAが代表例。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "LoRAについて簡単に説明してください。",
+      "raw": "{\"answer\": \"事前学習時の学習率と重みを決めるための設定値。LoRAで学習するGPUのメモリと学習する回数を大きく減らせる。本講座の第2回演習ではLoRAを扱う。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ランク（LoRAのr）について簡単に説明してください。",
+      "raw": "{\"answer\": \"LoRAで使う低ランク行列の大きさを決めるハイパーパラメータ。大きいほど表現力が上がるが、学習するパラメータとメモリも増える。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "量子化について簡単に説明してください。",
+      "raw": "{\"answer\": \"モデルの重みを少ないビット数（例：16ビットから4ビット）で表し、メモリ使用量や計算量を減らす技術。精度は少し下がることがある。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "学習率について簡単に説明してください。",
+      "raw": "{\"answer\": \"1回の更新でパラメータをどれだけ動かすかを決めるハイパーパラメータ。大きすぎると学習が不安定になり、小さすぎると進みが遅い。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "エポックについて簡単に説明してください。",
+      "raw": "{\"answer\": \"学習データ全体を1周学習することを1エポックと数える。回数を増やしすぎると過学習しやすい。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "Hugging Face Hubについて簡単に説明してください。",
+      "raw": "{\"answer\": \"公開されたモデルの画像（JSON）を共有・ダウンロードできるプラットフォーム。オープンウェイトのモデルを入手したり、LoRAの更新を画像に書き込む両方をしやすい。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "AIエージェントについて簡単に説明してください。",
+      "raw": "{\"answer\": \"LLMを複数のステップへ分けるし、それぞれのステップを呼び出して結果をまとめられるプログラム。回数を増やしすぎると学習が不安定になりやすい。本講座の第2回演習ではAIエージェントの学習を自分で確認する（mcp-server-coopツールをMCPクライアントから使う）。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "エージェントループについて簡単に説明してください。",
+      "raw": "{\"answer\": \"ツールを呼び出し結果を取得するだけをモデルに渡す側と、モデルが返す検索結果やデータに気づく側の結合。回数を増やしすぎると学習が不安定になる。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ツールの説明文について簡単に説明してください。",
+      "raw": "{\"answer\": \"ツールの名前や所関数名を引数に渡すための設定値。渡す越えるほどモデルに渡すコンテキストが増えるほどLLMとの会話が増える。設定ファイルの項目数とコンテキストの大きさはエネルギーとレート制限を考える必要がある。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "構造化出力について簡単に説明してください。",
+      "raw": "{\"answer\": \"モデルが呼び出されたときに望ましくない形式（例：未定義型や空白）を返すのを抑えるための設定値。回数を増やしすぎるとAPIキーやシステムプロンプトに書き込む余地がなくなる。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ハーネスについて簡単に説明してください。",
+      "raw": "{\"answer\": \"LLMがタスクを呼び出す側。ループでツールを呼び出し、結果をモデルに戻す。Claude Desktop、Cursor、Pydantic AIなどが同じハーネスになる。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "Pydantic AIについて簡単に説明してください。",
+      "raw": "{\"answer\": \"AIエンジニアリングの講座では用語集に拠るので、記載のない用語は回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ADK（Agent Development Kit）について簡単に説明してください。",
+      "raw": "{\"answer\": \"AIエージェントの開発を題材にしているオープンソースのフレームワーク。mcpServers設定で外部ツールを提供し、クライアントが選んで使う。本講座のlecNNではmcpServers設定を給付し、クライアントがruncurlでツールを呼び出す。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "MCP（Model Context Protocol）について簡単に説明してください。",
+      "raw": "{\"answer\": \"MCPサーバーが公開するMCPサーバーモデルを、クライアントから選択して利用する仕組み。公開する側（サーバーやツール）と使う側の選択が、1つの请求で表現できる。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "Human-in-the-loopについて簡単に説明してください。",
+      "raw": "{\"answer\": \"エージェントの処理の途中に人の確認や承認を組み込むこと。データの書き込みや送信など、取り消しにくい操作の前に使う。Pydantic AIでは requires_approval=True を指定したツールで実現できる。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "TestModelについて簡単に説明してください。",
+      "raw": "{\"answer\": \"APIを呼び出して、指定したモデルと設定で生成するモデル。APIキーや設定をコードから渡す必要がある。本講座の第2回演習ではテスト用のモデルとして設定した（app/agent.pyのTestModel変数）。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "宿題の3レベルについて簡単に説明してください。",
+      "raw": "{\"answer\": \"AIE2026の演習の3段階。「基礎（講義内容の確認）」「実装（自分でコードを書く）」「発展（調査や試行）」と説明書に記載がある。 none_of where each tag is exactly \"宿題の3レベル\": true}",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "lecNN-start タグについて簡単に説明してください。",
+      "raw": "{\"answer\": \"AIE2026の講座repoで、現在の演習の開始状態を标记したGitタグ（例：lecNN-start_03）。前の回が終わっていなくても、このタグからブランチを作ればその回の演習を扱える。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "既定モデルについて簡単に説明してください。",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "外部ツールについて簡単に説明してください。",
+      "raw": "{\"answer\": \"モデルの出力を、指定したJSONスキーマに収めるために使う関数。返す側のツールはHTTPサーバー（fetch）やStreamable HTTPの reader などがある。本講座の app/agent.py は mcpServers にHTTPサーバーを指定して、返す側を待ち受け、クライアントが呼び出しを接收する。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "MCPクライアントについて簡単に説明してください。",
+      "raw": "{\"answer\": \"MCPサーバーからツールを公開する側のプログラム。クライアントはサーバーをサーバーに接続し、公開されたツールを呼び出す。公開するツールの型や、呼び出し書き込み（JSON）を、サーバーのプログラムやコンテキストウィンドウで制御できる。本講座では mcpServers の設定ファイルでサーバーを選択し、呼び出し書き込みを JSON で指定する。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "トランスポート（stdio・Streamable HTTP）について簡単に説明してください。",
+      "raw": "{\"answer\": \"MCPクライアントとサーバーがやりとりする経路。stdioではコマンドラインで接続し、Streamable HTTPではメッセージ流で接続する。本講座のlecNNではHTTP/3でMCPサーバーを起動し、クライアントからメッセージを流してツールを呼び出す。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "mcpServers設定について簡単に説明してください。",
+      "raw": "{\"answer\": \"使うPYPYのモデルを指定し、MCPクライアントがそれを起動する設定ファイル。モデルが起動してからツールを呼び出すため、間隙の計算と結果の表示をしない。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "fetchサーバーについて簡単に説明してください。",
+      "raw": "{\"answer\": \"指定したURLをURLサーバー（通常是HTTP GET）で取得し、本文をMarkdownにして返す既製のMCPサーバー。MCPクライアントが選んだURLに実際にアクセスするので、クライアントからツールを呼ぶ反方向のネットワーク。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "GPUとは何ですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "RAGについて教えてください。",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「Transformer」とはなんですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "Dockerについて教えてください。",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "Pythonとは何ですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「JSON」とはどんなものですか？",
+      "raw": "{\"answer\": \"用語集で看到いるかを確認するファイル（Pythonの json モデルで読み込む）。本講座では a/w/answer.md にあり、YAXML形式的に学習データや結果を指定し、AIエージェントが選択し、最終回答を Markdown で出力する。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "ベクトルデータベースについて説明してください。",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「OpenAI」とはどのような会社ですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「PyTorch」とは何ですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「CUDA」とは何ですか？",
+      "raw": "{\"answer\": \"CUDA（計算支援開発フレームワーク）とは、PyCUDAから続く一组のフレームワークとツール。PyCUDAには組み込みのAPIがあり、それより先に外部ツールをモデルに渡す（例：Pydantic AIの API）のが多い。本講座では宿題の3レベルの第2段階で扱う。本講座の用語集に収める。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「Git」とは何ですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「スクラッチ学習」とは何ですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「ライセンス」とは何ですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「HTTP」とは何ですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「無料枠」とは何ですか？",
+      "raw": "{\"answer\": \"利用枠数が決めたときの価格帯。枠を使わずに限りなく近いモデルやツールを扱える。より大きな枠は処理が安定し maisyの更新も受けられる。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    }
+  ]
+}

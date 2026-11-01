@@ -1,0 +1,299 @@
+{
+  "評価と改善のサイクルについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "作る→測る→直す"
+    ]
+  },
+  "LLM（大規模言語モデル）について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "トークンを予測",
+      "プロンプト"
+    ]
+  },
+  "トークンについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "最小単位"
+    ]
+  },
+  "プロンプトについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "入力文",
+      "方向づけ"
+    ]
+  },
+  "システムプロンプトについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "振る舞い",
+      "instructions"
+    ]
+  },
+  "temperatureについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "ランダムさ"
+    ]
+  },
+  "APIについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "窓口"
+    ]
+  },
+  "APIキーについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "秘密の文字列"
+    ]
+  },
+  "環境変数について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "プログラム外側",
+      "コードから切り離す"
+    ]
+  },
+  "GitHub Codespacesについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "クラウド上の開発環境",
+      "無料枠"
+    ]
+  },
+  "devcontainerについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "開発環境をコンテナとして定義",
+      "devcontainer.json"
+    ]
+  },
+  "Codespaces secretについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "秘密の値",
+      "環境変数"
+    ]
+  },
+  "ブランチについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "作業の流れを分ける",
+      "main"
+    ]
+  },
+  "プルリクエスト（PR）について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "取り込む",
+      "差分"
+    ]
+  },
+  "GitHub Copilotについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "コーディング支援",
+      "コード補完"
+    ]
+  },
+  "コーディングエージェントについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "自律的に",
+      "複数ステップ"
+    ]
+  },
+  "事前学習について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "次のトークン",
+      "汎用テキスト"
+    ]
+  },
+  "ファインチューニングについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "事前学習済み",
+      "追加学習"
+    ]
+  },
+  "PEFTについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "追加した小さなパラメータ",
+      "LoRA"
+    ]
+  },
+  "LoRAについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "低ランク行列",
+      "アダプタ"
+    ]
+  },
+  "ランク（LoRAのr）について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "ハイパーパラメータ",
+      "低ランク"
+    ]
+  },
+  "量子化について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "少ないビット数",
+      "メモリ使用量"
+    ]
+  },
+  "学習率について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "ハイパーパラメータ",
+      "不安定"
+    ]
+  },
+  "エポックについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "1周",
+      "過学習"
+    ]
+  },
+  "Hugging Face Hubについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "プラットフォーム",
+      "オープンウェイト"
+    ]
+  },
+  "AIエージェントについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "自分で判断して",
+      "ツールを呼び出し"
+    ]
+  },
+  "エージェントループについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "ツール呼び出し",
+      "最終回答"
+    ]
+  },
+  "ツールの説明文について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "docstring",
+      "型ヒント"
+    ]
+  },
+  "構造化出力について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "JSONスキーマ",
+      "output_type"
+    ]
+  },
+  "ハーネスについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "包み",
+      "UI"
+    ]
+  },
+  "Pydantic AIについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "フレームワーク",
+      "Pydantic"
+    ]
+  },
+  "ADK（Agent Development Kit）について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "オープンソース",
+      "Gemini"
+    ]
+  },
+  "MCP（Model Context Protocol）について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "オープンな標準プロトコル",
+      "MCPサーバー"
+    ]
+  },
+  "Human-in-the-loopについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "確認",
+      "requires_approval"
+    ]
+  },
+  "TestModelについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "偽モデル",
+      "配線"
+    ]
+  },
+  "宿題の3レベルについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "基礎",
+      "実装",
+      "発展"
+    ]
+  },
+  "lecNN-start タグについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "Gitタグ",
+      "ブランチ"
+    ]
+  },
+  "既定モデルについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "gemini-3.5-flash-lite",
+      "AIE_MODEL"
+    ]
+  },
+  "外部ツールについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "プロセスや機械をまたいで",
+      "MCP"
+    ]
+  },
+  "MCPクライアントについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "MCPサーバー",
+      "MCPToolset"
+    ]
+  },
+  "トランスポート（stdio・Streamable HTTP）について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "stdio",
+      "Streamable HTTP"
+    ]
+  },
+  "mcpServers設定について簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "mcpServers",
+      "mcp_servers.json"
+    ]
+  },
+  "fetchサーバーについて簡単に説明してください。": {
+    "in_glossary": true,
+    "must_include": [
+      "mcp-server-fetch",
+      "Markdown"
+    ]
+  }
+}

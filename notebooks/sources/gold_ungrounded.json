@@ -1,0 +1,92 @@
+{
+  "GPUとは何ですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "RAGについて教えてください。": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "「Transformer」とはなんですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "Dockerについて教えてください。": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "Pythonとは何ですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "「JSON」とはどんなものですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "ベクトルデータベースについて説明してください。": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "「OpenAI」とはどのような会社ですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "「PyTorch」とは何ですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "「CUDA」とは何ですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "「Git」とは何ですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "「スクラッチ学習」とは何ですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "「ライセンス」とは何ですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "「HTTP」とは何ですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  },
+  "「無料枠」とは何ですか？": {
+    "in_glossary": false,
+    "must_include": [
+      "回答できません"
+    ]
+  }
+}
