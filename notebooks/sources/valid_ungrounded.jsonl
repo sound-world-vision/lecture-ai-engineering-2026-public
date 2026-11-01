@@ -1,0 +1,7 @@
+{"messages": [{"role": "user", "content": "「RAG（検索拡張生成）」について教えてください。"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「Docker」について簡単に説明してください。"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「JSON」はどのようなものですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「GPU」とはどのようなものですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「推論（inference）」とは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「アテンション」とは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「LangChain」とは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}

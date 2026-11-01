@@ -1,0 +1,534 @@
+{
+  "summary": {
+    "label": "before",
+    "n": 58,
+    "format_rate": 0.1724137931034483,
+    "content_rate": 0.017241379310344827,
+    "both_rate": 0.017241379310344827,
+    "seconds": 87.3
+  },
+  "rows": [
+    {
+      "question": "評価と改善のサイクルについて簡単に説明してください。",
+      "raw": "{\"answer\": \"評価と改善のサイクルは、モデルの性能を測定し、その改善を継続的に評価し、モデルを最適化するプロセスです。このサイクルは、モデルの初期状態から最終的な状態まで、評価と改善のサイクルを繰り返すことで、モデルの性能を最大化します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "LLM（大規模言語モデル）について簡単に説明してください。",
+      "raw": "{\"answer\": \"LLM（大規模言語モデル）は、大規模言語モデル（LLM）の略語で、大規模言語モデル（LLM）の略語です。\"",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "トークンについて簡単に説明してください。",
+      "raw": "{\"answer\": \"トークン（Token）は、大規模言語モデル（LLM）がテキストを処理する際に、文字列を分割して取得した単位です。例えば、日本語の「こんにちは」を「こんにちは」の 3 つの文字列に分けて取得したものをトークンと呼びます。LLM はこれらのトークンを文脈や特定のタスクに合わせて処理します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "プロンプトについて簡単に説明してください。",
+      "raw": "{\"answer\": \"プロンプトは、AI エンジンがユーザーの指令やタスクを理解し、適切な回答やコードを実行するための指示文です。一般的には「ユーザーの指令を AI に伝えるための文書」として使われます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "システムプロンプトについて簡単に説明してください。",
+      "raw": "{\"answer\": \"システムプロンプトは、AI エージェントが特定の環境やリソースにアクセスする際に、システムが提供する設定情報や指示を記述するものです。例として、API キー、環境変数、設定ファイル、または特定のツール名を指定するプロンプトが該当します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "temperatureについて簡単に説明してください。",
+      "raw": "{\"answer\": \"温度（temperature）は、大規模言語モデル（LLM）の出力の「ランダム性」や「不確定性」を制御するパラメータです。出力がより確実な結果になるためには、温度を低く設定し、出力がより特定の方向に集中させることができます。一方、温度を高く設定すると、出力がより多様化し、意外な結果になる可能性が高まります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "APIについて簡単に説明してください。",
+      "raw": "{\"answer\": \"API（Application Programming Interface）とは、異なるシステムやアプリケーション間でデータをやり取りするための標準的なインターフェースです。ユーザーは、特定のサービスやツールに対して「この API を使用して、このデータを取得・処理する」というように説明できます。API は、そのサービスやツールの仕様（仕様書）に基づいて定義されており、その仕様に従って動作する仕組みです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "APIキーについて簡単に説明してください。",
+      "raw": "{\"answer\": \"API キーは、AI エージェントが外部のサービス（API）からデータを取得する際に必要とされる認証情報です。API キーは、API のアクセス権限を管理し、ユーザーが特定のサービスに対してアクセスできるようにします。API キーは、環境変数として設定され、その値が API クライアントに渡されます。API キーは、API キーの長さや種類によって異なりますが、一般的には長",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "環境変数について簡単に説明してください。",
+      "raw": "{\"answer\": \"環境変数は、アプリケーションやコンテナ内で設定される静的なパラメータです。ユーザーが直接入力するのではなく、システムが自動的に設定された値として利用されます。例として、`HUGGING_FACE_HUB` は Hugging Face Hub の URL として利用されるため、環境変数として設定されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "GitHub Codespacesについて簡単に説明してください。",
+      "raw": "{\"answer\": \"GitHub Codespaces は、GitHub のコードベース上で、開発環境をホストするサービスです。ユーザーは、GitHub のリポジトリにコードをコミットし、そのコードをホストする際に、GitHub Codespaces を選択して開発環境を構築できます。これにより、開発者がコードをコミットする際に、開発環境が自動的にホストされるため、開発の妨げとなる環境構築を避けることができます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "devcontainerについて簡単に説明してください。",
+      "raw": "{\"answer\": \"devcontainer は、開発環境を構築するためのツールです。GitHub Codespaces や GitLab Codespaces などのサービスを利用し、開発者向けの仮想環境を構築・管理するための機能を提供します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "Codespaces secretについて簡単に説明してください。",
+      "raw": "{\"answer\": \"Codespaces secret は、GitHub Codespaces の環境設定で使われる、コードを生成する際に必要とするキーです。このキーは、環境変数として設定され、開発者がコードを生成する際に使用します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ブランチについて簡単に説明してください。",
+      "raw": "{\"answer\": \"ブランチは、Git において、異なるバージョンのコードを管理するための「ルート」です。異なるブランチは、同じコードを管理するのではなく、それぞれ独立したコードのバージョンを管理します。例えば、開発者向けのブランチ（main）と、テスト用のブランチ（test）など、異なる目的のコードを管理するブランチが存在します。ブランチは、特定のバージョンのコードを管理する「ルート」であり、異なる",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "プルリクエスト（PR）について簡単に説明してください。",
+      "raw": "{\"answer\": \"GitHub Copilot は、AI エージェントがコードを自動補完するツールです。プルリクエスト（PR）は、開発者が新しい機能や変更を提出するプロセスで、このツールがコードを自動補完する際に利用されるため、PR とは直接の関係はありません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "GitHub Copilotについて簡単に説明してください。",
+      "raw": "{\"answer\": \"GitHub Copilot は、GitHub のコード生成ツールで、ユーザーがコードを記述する際に、AI エージェントが自動的にコードを補完する機能です。ユーザーが記述したコードに対して、AI が自動的に補完する機能です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "コーディングエージェントについて簡単に説明してください。",
+      "raw": "{\"answer\": \"コーディングエージェントは、AI 技術者や開発者がコードを自動生成・修正するツールです。ユーザーが指定したタスクやコードの構造に基づいて、AI が自動的にコードを生成し、修正・テストを行うことで、開発プロセスを自動化します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "事前学習について簡単に説明してください。",
+      "raw": "{\"answer\": \"事前学習（SFT）は、大規模言語モデル（LLM）の学習において、教師データからパターンを学習させるプロセスです。モデルは、人間が実際に会話や文書で表現する言語の構造や表現法を学習し、その上で、その構造に基づいて新しい文や質問を生成する能力を備えます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ファインチューニングについて簡単に説明してください。",
+      "raw": "{\"answer\": \"ファインチューニングは、大規模言語モデル（LLM）の学習を加速するための最適化プロセスで、モデルのパフォーマンスを向上させるために、学習率やエポックなどのパラメータを調整します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "PEFTについて簡単に説明してください。",
+      "raw": "{\"answer\": \"PEFT（Parameter-Efficient Fine-Tuning）は、大規模言語モデル（LLM）の学習を高速化するために、モデルの参数を減らす技術です。従来のファインチューニングでは、すべてのパラメータを学習させるため、計算コストが非常に高く、特に大規模モデルでは過学習や計算負荷が問題になります。PEFT は、特定のタスクや知識を学習する際に必要となる「パラメ",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "LoRAについて簡単に説明してください。",
+      "raw": "{\"answer\": \"LoRA（Low-Rank Adaptation）は、大規模言語モデル（LLM）のファインチューニングにおいて、モデルの学習パラメータを「低ランク（低次元）」に縮小して学習する技術です。従来のファインチューニングでは、すべてのパラメータを学習し、過学習や計算コストの増加を招くため、LoRA は学習パラメータを少数の少数のベクトルに",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ランク（LoRAのr）について簡単に説明してください。",
+      "raw": "{\"answer\": \"LoRA（低秩近似）のランク（r）は、モデルの低秩性（低次元）を定義するパラメータです。ランクが大きいほど、モデルの構造が複雑になり、学習効率や計算コストが低下します。ランクが小さいほど、モデルは単純な構造（低次元）に近いため、学習が安定して進みます。ランクは 0 から最大値（例：100）まで",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "量子化について簡単に説明してください。",
+      "raw": "{\"answer\": \"量子化とは、AI エージェントが学習する知識やタスクを「量子状態」として表現し、その状態を量子計算で処理する技術です。従来の機械学習ではデータが固定された状態（ベクトル）として扱われる一方、量子化では量子ビット（qubit）を用いて、複数の状態を同時に管理し、複雑なタスクを効率的に解くことができます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "学習率について簡単に説明してください。",
+      "raw": "{\"answer\": \"学習率（learning rate）は、モデルの学習プロセスにおいて、各ステップでパラメータを更新する割合を指します。学習率を小さくすると、モデルがより安定して学習し、過学習を避けることができますが、学習速度が遅くなります。一般的に、学習率は 10^-4 から 10^-6 の範囲に設定され、学習率の調整はモデルの性能と学習速度のバランスを",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "エポックについて簡単に説明してください。",
+      "raw": "{\"answer\": \"学習の進捗を示す期間単位です。学習の初期段階から最終段階までを区別し、各エポックごとに学習率や損失値などを記録することで、学習の安定性を評価します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "Hugging Face Hubについて簡単に説明してください。",
+      "raw": "{\"answer\": \"Hugging Face Hub は、Hugging Face の AI 技術コミュニティの主要なプラットフォームであり、ユーザーが AI モデルやツールを公開し、他のユーザーや研究者がアクセスできるようにするプラットフォームです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "AIエージェントについて簡単に説明してください。",
+      "raw": "{\"answer\": \"AIエージェントは、人間が直接操作するのではなく、AIのシステムプロンプトに従って独自にタスクを処理する自主的なソフトウェアエージェントです。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "エージェントループについて簡単に説明してください。",
+      "raw": "{\"answer\": \"エージェントループは、AI エージェントが外部ツールを使って処理する際に、その処理結果を再評価し、さらに新しいタスクを処理するループ構造のことです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ツールの説明文について簡単に説明してください。",
+      "raw": "{\"answer\": \"ツール（Tool use / Function calling）は、AI エンジンがユーザーの指令に従って実行する機能です。ユーザーが指定したタスクやロジックを実行する際に、ツールの名前空間（名前空間）で呼び出すことで、AI エンジンがそのタスクを処理します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "構造化出力について簡単に説明してください。",
+      "raw": "{\"answer\": \"構造化出力とは、AI エージェントが出力するデータを形式化して、ユーザーや他のシステムが容易に読み取れるようにする技術です。例えば、JSON、XML、Markdown、CSV、etc. などの形式でデータを整理し、出力する際、その形式を明示的に指定することで、読み取り方と出力形式を統一できます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ハーネスについて簡単に説明してください。",
+      "raw": "{\"answer\": \"ハーネスは、AI エージェントが外部ツールや他のエージェントと通信するための通信チャネル（通常は TCP/IP または HTTP）を指します。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "Pydantic AIについて簡単に説明してください。",
+      "raw": "{\"answer\": \"Pydantic AI は、Pydantic のライブラリをベースに開発された AI エージェントのフレームワークです。Pydantic はデータ構造の定義や検証を得意とするライブラリですが、Pydantic AI は Pydantic の機能を活かし、AI エージェントの開発に役立ちます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "ADK（Agent Development Kit）について簡単に説明してください。",
+      "raw": "{\"answer\": \"ADK（Agent Development Kit）は、AI エージェントの開発に使用されるフレームワークです。エージェントがタスクを処理する際に、複数のツールや関数を実行するためのモジュールを定義し、これらのモジュールを管理するシステムです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "MCP（Model Context Protocol）について簡単に説明してください。",
+      "raw": "{\"answer\": \"MCP（Model Context Protocol）は、AI エージェントが外部のツールやサービス（API）と通信するための標準化されたプロトコルです。エージェントは MCP サーバーを通じて、特定のツール（例：検索、画像生成、ファイル操作など）を呼び出して、その結果を出力して処理します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "Human-in-the-loopについて簡単に説明してください。",
+      "raw": "{\"answer\": \"人間とAIの両者が協力して、人間が指示した行動や判断に従って行動する仕組みです。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "TestModelについて簡単に説明してください。",
+      "raw": "{\"answer\": \"TestModel は、AI エージェントのテストモデルとして、テスト環境で動作を確認するためのモデルです。テストモデルは、実際のモデルよりも軽量で、トレーニングコストを低減するために使用されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "宿題の3レベルについて簡単に説明してください。",
+      "raw": "{\"answer\": \"宿題の3レベルは、学習プロセスにおける段階的な進捗を示すものです。まず「学習」段階で、モデルがデータから学習して出力する段階です。次に「評価」段階で、学習した結果の出力が適切かどうかを確認する段階です。最後に「改善」段階で、評価結果に基づいてモデルを最適化し、より良い出力を生成する段階です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "lecNN-start タグについて簡単に説明してください。",
+      "raw": "{\"answer\": \"lecNN-start タグは、学習プロセスの初期段階における学習率の調整や、モデルの初期化に関する設定を指します。具体的には、学習開始時に指定された学習率や、モデルの初期状態を制御する機能を含みます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "既定モデルについて簡単に説明してください。",
+      "raw": "{\"answer\": \"既定モデルとは、学習前に事前に学習されたモデルのことです。学習プロセスの中で、ユーザーの指示に従って生成されるモデルではなく、あらかじめ準備済みのモデルとして使用されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "外部ツールについて簡単に説明してください。",
+      "raw": "{\"answer\": \"外部ツールとは、AI エージェントが実行する外部のサービスや API を指します。例えば、画像処理やデータ解析を行うための画像処理 API や、コード生成を行うためのコード生成 API などが該当します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "MCPクライアントについて簡単に説明してください。",
+      "raw": "{\"answer\": \"MCPクライアントは、MCPサーバーから取得したモデルやツールを、ユーザーのコードやツール呼び出しに直接接続して実行するアプリケーションです。ユーザーは MCP クライアントを通じて、サーバーから提供された機能を実行する際に、そのモデルやツールの名前空間や関数名を指定して呼び出します。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "トランスポート（stdio・Streamable HTTP）について簡単に説明してください。",
+      "raw": "{\"answer\": \"トランスポートは、AI エンジンが外部ツールやサーバーと通信するための通信インターフェースです。stdio は標準入力・標準出力を扱うための通信方法であり、Streamable HTTP は HTTP 通信を流式化して高速な通信を実現するための技術です。この両者は、AI エンジンが外部のサーバーからデータを取得したり、出力したりする際に使用されます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "mcpServers設定について簡単に説明してください。",
+      "raw": "{\"answer\": \"mcpServers設定は、MCP（Model Context Protocol）サーバーの配置や設定を管理するための設定ファイルです。この設定ファイルに「mcpServers」キーが含まれており、そのキーには「server」キーでサーバー名（例：mcp-server-llama3）や「name」キーでサーバー名を指定し、さらに「port」キーでポート番号（例：8080）を指定します。",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "fetchサーバーについて簡単に説明してください。",
+      "raw": "{\"answer\": \"fetchサーバーは、Hugging Face Hub などの API サーバーとして、大規模言語モデル（LLM）の出力やトークン情報を取得するためのサーバーです。ユーザーは API キーを使用して、fetch サーバーからモデルの出力を取得したり、トークンのリストを取得したりできます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": true
+    },
+    {
+      "question": "GPUとは何ですか？",
+      "raw": "{\"answer\": \"GPUとは、GPU（Graphics Processing Unit）の略で、高性能な計算処理を可能にするハードウェアのことで、AI などの大規模言語モデル（LLM）のトレーニングや推理において非常に重要な役割を果たします。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "RAGについて教えてください。",
+      "raw": "{\"answer\": \"RAG（Retrieval-Augmented Generation）は、大規模言語モデル（LLM）の出力を、外部の知識やデータから抽出・検索し、その結果を生成する技術です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「Transformer」とはなんですか？",
+      "raw": "{\"answer\": \"Transformer は、大規模言語モデル（LLM）の一種であり、特に自然言語処理において非常に重要な構造です。このモデルは、文脈を考慮して文脈を学習する能力を持ち、自然言語処理において非常に高い精度を誇ります。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "Dockerについて教えてください。",
+      "raw": "{\"answer\": \"Docker は、容器化技術の一種で、アプリケーションを効率的に共有・管理するためのプラットフォームです。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "Pythonとは何ですか？",
+      "raw": "{\"answer\": \"Python は、Python 言語です。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「JSON」とはどんなものですか？",
+      "raw": "{\"answer\": \"JSON（JavaScript Object Notation）は、データとして使用される標準的な記法です。JSON には、キー（key）と値（value）のペアで構成されたオブジェクト（JSON オブジェクト）が定義されます。この記法は、データが易読性、易読性、易読性、易読性、易読性、易読性、易読性、易読性、易読性、",
+      "format_ok": false,
+      "format_reason": "json_error: JSONDecodeError",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "ベクトルデータベースについて説明してください。",
+      "raw": "{\"answer\": \"ベクトルデータベースは、データがベクトル形式（数値列）で保存されるデータベースです。ベクトルは、データの方向性や大きさを表現するもので、AI 分野では大規模言語モデル（LLM）や機械学習モデルの出力や特徴を表現するために広く使われます。ベクトルデータベースは、これらのベクトルを効率的に管理し、検索や計算を行うことができます。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「OpenAI」とはどのような会社ですか？",
+      "raw": "{\"answer\": \"OpenAI は、大規模言語モデル（LLM）の開発、トレーニング、および利用を支援する企業です。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「PyTorch」とは何ですか？",
+      "raw": "{\"answer\": \"PyTorch は、Python のライブラリであり、AI 開発において非常に広く使用されるフレームワークです。\", \"in_glossary\": true}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「CUDA」とは何ですか？",
+      "raw": "{\"answer\": \"CUDA は、GPU（グラフィックカルチャー）の計算能力を高速化するために開発された、GPU 向けの言語やライブラリです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「Git」とは何ですか？",
+      "raw": "{\"answer\": \"Git はバージョン管理システムです。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「スクラッチ学習」とは何ですか？",
+      "raw": "{\"answer\": \"学習率\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「ライセンス」とは何ですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}",
+      "format_ok": true,
+      "format_reason": "",
+      "content_ok": true,
+      "both_ok": true,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「HTTP」とは何ですか？",
+      "raw": "{\"answer\": \"HTTP（HyperText Transfer Protocol）は、Web 通信を介してデータを送受信するための標準的なプロトコルです。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    },
+    {
+      "question": "「無料枠」とは何ですか？",
+      "raw": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\"}",
+      "format_ok": false,
+      "format_reason": "missing_key",
+      "content_ok": false,
+      "both_ok": false,
+      "gold_in_glossary": false
+    }
+  ]
+}

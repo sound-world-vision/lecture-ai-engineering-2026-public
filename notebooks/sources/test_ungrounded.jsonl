@@ -1,0 +1,15 @@
+{"messages": [{"role": "user", "content": "GPUとは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "RAGについて教えてください。"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「Transformer」とはなんですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "Dockerについて教えてください。"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "Pythonとは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「JSON」とはどんなものですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "ベクトルデータベースについて説明してください。"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「OpenAI」とはどのような会社ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「PyTorch」とは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「CUDA」とは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「Git」とは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「スクラッチ学習」とは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「ライセンス」とは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「HTTP」とは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
+{"messages": [{"role": "user", "content": "「無料枠」とは何ですか？"}, {"role": "assistant", "content": "{\"answer\": \"用語集に記載のない用語なので、回答できません。\", \"in_glossary\": false}"}]}
