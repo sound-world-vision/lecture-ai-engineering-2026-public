@@ -6,8 +6,10 @@
 
 import json
 import random
+from datetime import datetime
 from functools import cache
 from pathlib import Path
+from pydantic_ai import RunContext, ApprovalRequired
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 MAX_RESULTS = 3
@@ -100,3 +102,16 @@ def make_quiz(lecture: int) -> str:
         "answer": f"{term_entry["definition"]}"
     }
     return json.dumps(dic, ensure_ascii=False)
+
+
+def save_learning_log(ctx: RunContext, log: str) -> str:
+    """学習の記録をファイルに保存する。
+
+    学習の記録としてチャット履歴をファイルに保存する。
+    """
+    if not ctx.tool_call_approved:
+        raise ApprovalRequired(metadata={'reason': 'protected'})
+    log_dir = Path(__file__).resolve().parent.parent / "learning_log"
+    log_dir.mkdir(parents=True, exist_ok=True)
+    filename = f"{datetime.now().isoformat()}.log"
+    (log_dir / filename).write_text(log)

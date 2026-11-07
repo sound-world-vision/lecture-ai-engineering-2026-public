@@ -23,3 +23,5 @@ mlruns
 # LoRA学習ファイル
 notebooks/work/adapter
 notebooks/work/ckpt
+
+.adk/session.db

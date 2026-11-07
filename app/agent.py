@@ -4,7 +4,8 @@
     uv run python -m app.agent "AIE2026の講座で使う「lecNN-start タグ」とは何ですか？"
     uv run python -m app.agent --trace "LoRAとQLoRAの違いは？"   # ツール呼び出しを表示
     uv run python -m app.agent --mcp --trace "LoRAとは？"        # 第5回: ツールを MCP サーバーから受け取る
-    uv run python -m app.agent --mcp --list-tools               # 第5回: モデルに見えるツール一覧（APIキー不要）
+    # 第5回: モデルに見えるツール一覧（APIキー不要）
+    uv run python -m app.agent --mcp --list-tools
 
 エージェント = モデル + ループ + ツール。
 モデルは tools.py の関数を「ツール」として呼び出し、その結果を見て回答を作る。
@@ -15,13 +16,14 @@ import argparse
 import inspect
 import json
 from pathlib import Path
+from typing import Optional, Sequence
 
 from dotenv import load_dotenv
-from pydantic_ai import Agent
+from pydantic_ai import Agent, DeferredToolRequests, DeferredToolResults
 from pydantic_ai.exceptions import ModelHTTPError
 from fastmcp import Client
 from pydantic_ai.mcp import MCPToolset, StdioTransport
-from pydantic_ai.messages import ToolCallPart, ToolReturnPart
+from pydantic_ai.messages import ToolCallPart, ToolReturnPart, ModelMessage
 from pydantic_ai.models.google import GoogleModel
 from pydantic_ai.models.test import TestModel
 from pydantic_ai.providers.google import GoogleProvider
@@ -40,11 +42,37 @@ INSTRUCTIONS = """\
 - 宿題の答えそのものは書かず、考え方のヒントで導く。
 """
 
+
+EXTRA_INSTRUCTIONS = """\
+- ユーザーの回答が与えられたら、正解かどうかを回答下うえで、正解を示す。
+- /exit または /quit という指示でかつ、`save_learning_log` ツールが利用できる場合は、会話記録を学習記録として保存する。
+- 学習記録は各トピックごとに下記のフォーマットで記録する。
+```
+## ＜トピック＞
+
+### 質疑の概要
+
+＜質疑の概要を整理して記載＞
+
+### 現状の本トピックに関するユーザーの理解度
+
+＜ユーザーのこのトピックに関する理解度を評価＞
+
+### 次の学習に向けた推奨ステップ
+
+＜ユーザーがどのような内容を次に学習すべきかのアドバイスを記載＞
+
+```
+"""
+
+
 # モデルは実行時に渡す（テストではAPIを呼ばない TestModel に差し替えるため）
-agent = Agent(instructions=INSTRUCTIONS)
+agent = Agent(instructions=INSTRUCTIONS + EXTRA_INSTRUCTIONS, output_type=[
+              str, DeferredToolRequests])
 agent.tool_plain(tools.search_glossary)
 agent.tool_plain(tools.get_lecture_summary)
 agent.tool_plain(tools.make_quiz)
+agent.tool(tools.save_learning_log)
 
 # TODO(第3回 演習): tools.py に make_quiz を作り、ここで登録しよう
 
@@ -117,6 +145,40 @@ def print_trace(result) -> None:
     print(f"[usage] {result.usage}")
 
 
+def yes_no(prompt: str) -> bool:
+    while True:
+        choice = input(f"{prompt} [y/N]: ").lower()
+        if choice in ["y", "ye", "yes"]:
+            return True
+        elif choice in ["n", "no"]:
+            return False
+        else:
+            print("「y」または「n」で答えてください。")
+
+
+def queries(prompt: str, initial_query: Optional[str]):
+    if initial_query:
+        yield initial_query
+    while True:
+        query = input(f"{prompt}")
+        yield query
+        if query in ("/exit", "/quit"):
+            break
+
+
+def run_approved_tools(target: Agent, model: GoogleModel, history: Sequence[ModelMessage], requests: DeferredToolRequests):
+    results = DeferredToolResults()
+    for call in requests.approvals:
+        approved = False
+        if call.tool_name == 'save_learning_log':
+            approved = yes_no(f"[{call.tool_name}] ログ記録を許可しますか？")
+
+            results.approvals[call.tool_call_id] = approved
+
+        target.run_sync(
+            'ログ記録してください。', model=model, message_history=history, deferred_tool_results=results)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="学習支援エージェントに質問する")
     parser.add_argument("question", nargs="?")
@@ -137,14 +199,26 @@ def main() -> None:
     print(f"[model] {MODEL}")
     if args.mcp:
         print("[tools] MCP サーバー（app/mcp_servers.json）")
-    try:
-        result = target.run_sync(args.question, model=build_model())
-    except ModelHTTPError as e:
-        print(api_error_message(e.status_code, str(e.body)[:200]))
-        raise SystemExit(1)
-    print(result.output)
-    if args.trace:
-        print_trace(result)
+
+    result = None
+    history = None
+    user_message = args.question
+    model = build_model()
+    for query in queries("[user] >", args.question):
+        try:
+            result = target.run_sync(
+                query, model=model, message_history=history)
+            history = result.all_messages()
+        except ModelHTTPError as e:
+            print(api_error_message(e.status_code, str(e.body)[:200]))
+            raise SystemExit(1)
+
+        print(result.output)
+        if args.trace:
+            print_trace(result)
+
+    if isinstance(result.output, DeferredToolRequests):
+        run_approved_tools(target, model, history, result.output)
 
 
 if __name__ == "__main__":
