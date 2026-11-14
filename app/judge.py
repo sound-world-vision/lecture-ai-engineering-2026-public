@@ -199,7 +199,7 @@ def build_test_model() -> FunctionModel:
 
 
 # ---------------------------------------------------------------- 採点と集計
-def judge_cases(agent: Agent, cases: list[dict], wait: float = 0.0) -> dict[str, dict]:
+def judge_cases(agent: Agent, cases: list[dict], wait: float = 60.0) -> dict[str, dict]:
     """評価セットを 1 件ずつ採点する。戻り値は id → {基準: {reason, verdict}}。"""
     verdicts: dict[str, dict] = {}
     print(f"採点中 {len(cases)} 件 ", end="", flush=True)
@@ -323,7 +323,7 @@ def compare_labels(a: dict[str, dict], b: dict[str, dict], name_a: str, name_b: 
 
 
 # ---------------------------------------------------------------- 回答の生成（宿題・実装）
-def generate_answers(cases: list[dict], wait: float = 1.0) -> list[dict]:
+def generate_answers(cases: list[dict], wait: float = 60.0) -> list[dict]:
     """評価セットの各質問を自分のエージェント（app.agent）に投げ、回答を埋める。"""
     from app.agent import agent, build_model
 
